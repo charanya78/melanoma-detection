@@ -53,14 +53,24 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
 - For every sample, CPVS score is calculated and if it is lesser that the threshold, these samples are classified as challenging and are sent to a baseline segregated dataset (BSD).
 - There are four convolution blocks in the CNN architecture where each block consists of different combinations of Convolutional layer, batch normalization layer, Max pooling layer and dropout layer. 
 - After these blocks, there are flattened, Dense, and Dropout layers. 
+- Code : https://github.com/charanya78/melanoma-detection/blob/main/1.%20CNN.ipynb
 
 #### VARIANCE SCORE AND CREATION OF NEW DATASET
 
+- The probability of a sample being benign and the probability of the same sample being malignant are found along with the predicted class and true class. 
+- The class probability variance score which is the difference between the probability of a sample being benign and the probability of a sample being malignant is calculated. 
+- When the confidence factor is less than 0.999995,  the error ratio (the ratio between the number of misclassified samples and the total number of samples in the range) is 0.05 which means 95% of the time, it predicts accurately. 
+- On further analysis, it was found that, as the confidence factor decreases from 0.99, the number of misclassified samples increases and the error ratio increases to 0.3 which means that only 70% of the time, it predicts accurately. 
+- Different values of the threshold value are tried through trial and error and it is found as 0. 999995. 
+- These challenging samples (confidence factor < 0.999995) are moved to a segregated dataset. 
+- Code : https://github.com/charanya78/melanoma-detection/blob/main/1.%20CNN.ipynb
 
 #### PRE PROCESSING
 
 ![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/data_aug.PNG)
 
+![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/hair.PNG)
+ 
 #### CNN FEATURE EXTRACTION
 
 
