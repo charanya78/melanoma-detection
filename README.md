@@ -46,6 +46,9 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
 
 ![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/ARCH_DIAG.PNG)
 
+
+#### DATASET
+
 #### BASELINE CNN
 
 - In the first tier of classification, the Baseline CNN classifies the data samples and extracts the challenging samples. 
@@ -76,15 +79,17 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
 - Finally, the inpainting algorithm is applied to this image. 
 - The original image with hair is passed along with the masked image where the hair is highlighted (output of thresholding).
 - The masked regions are removed from the original image and it results in an image with the hair removed.
+- Code - https://github.com/charanya78/melanoma-detection/blob/main/2.%20Hair%20removal.ipynb
 
-![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/data_aug.PNG)
+![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/hair.PNG)
 
 - Data augmentation processes like random rotation, random noise and horizontal flipping are performed to balance the dataset. 
 - Random rotation rotates the image between 25% to the left and 25% to the right. 
 - The flip function directly flips the image array. 
-- For the random noise function, the type of noise chosen is Gaussian and the amount of noise added is kept to 0.05 to not change the image drastically. 
+- For the random noise function, the type of noise chosen is Gaussian and the amount of noise added is kept to 0.05 to not change the image drastically.
+- Code - https://github.com/charanya78/melanoma-detection/blob/main/3.%20Data%20Augmentation.ipynb 
 
-![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/hair.PNG)
+![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/data_aug.PNG)
  
 #### CNN FEATURE EXTRACTION
 
@@ -93,10 +98,8 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
 
 ![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/abcd.PNG)
 
+
 #### FEATURE FUSION AND FINAL CLASSIFICATION 
-
-
-## REPOSITORY STRUCTURE
 
 
 
