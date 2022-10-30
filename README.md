@@ -67,7 +67,22 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
 
 #### PRE PROCESSING
 
+- Hair is removed from the lesions to ease the classification process. 
+- The image is converted to a grayscale and then it is passed to a Blackhat filter. 
+- The Blackhat filter enhances the dark regions of interest in a much bright background in this case the hair is the dark region which is in a bright background (the lesion itself). 
+- This algorithm returns an image with the hair highlighted. 
+- This image is then passed to a thresholding technique. 
+- Here an image where only the hair is highlighted in a black background is formed. 
+- Finally, the inpainting algorithm is applied to this image. 
+- The original image with hair is passed along with the masked image where the hair is highlighted (output of thresholding).
+- The masked regions are removed from the original image and it results in an image with the hair removed.
+
 ![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/data_aug.PNG)
+
+- Data augmentation processes like random rotation, random noise and horizontal flipping are performed to balance the dataset. 
+- Random rotation rotates the image between 25% to the left and 25% to the right. 
+- The flip function directly flips the image array. 
+- For the random noise function, the type of noise chosen is Gaussian and the amount of noise added is kept to 0.05 to not change the image drastically. 
 
 ![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/hair.PNG)
  
