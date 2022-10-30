@@ -6,7 +6,7 @@ The objective of this project is to develop a two-tier convolution neural networ
 
 ## SOFTWARES USED
 
-- Jupyter Notebook - Implementation
+Jupyter Notebook - Implementation
 
 ## LANGUAGE USED
 
@@ -42,27 +42,30 @@ To install the above mentioned dependencies use:
 
 ## ARCHITECTURE DIAGRAM
 
-![alt text](https://github.com/charanya78/fall_detection_audios/blob/main/diagrams/arch_diag.PNG)
+![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/ARCH_DIAG.PNG)
 
 #### BASELINE CNN
+
 
 #### VARIANCE SCORE AND CREATION OF NEW DATASET
 
 
 #### PRE PROCESSING
 
+![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/data_aug.PNG)
 
 #### CNN FEATURE EXTRACTION
 
 
 #### ABCD FEATURE EXTRACTION
 
+![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/abcd.PNG)
 
 #### FEATURE FUSION AND FINAL CLASSIFICATION 
 
+
 ## REPOSITORY STRUCTURE
 
-![alt text](https://github.com/charanya78/fall_detection_audios/blob/main/diagrams/repo.PNG)
 
 
 ## EXECUTION 
