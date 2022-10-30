@@ -136,4 +136,6 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
 
 ## EXECUTION 
 
-
+- Replicate the directory strcuture as given
+- Execution order remains the same as the numbers in the notebooks given
+- Change the path of the dataset as and when required
