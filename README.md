@@ -72,6 +72,7 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
 - Different values of the threshold value are tried through trial and error and it is found as 0. 999995. 
 - These challenging samples (confidence factor < 0.999995) are moved to a segregated dataset. 
 - Code : https://github.com/charanya78/melanoma-detection/blob/main/1.%20CNN.ipynb
+- New dataset created : https://github.com/charanya78/melanoma-detection/tree/main/final
 
 #### PRE PROCESSING
 
@@ -105,6 +106,7 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
 -  This dense layer is one layer before the final activation layer. 
 -  These features are taken for both the training images and testing images are stored separately.
 -  Code - https://github.com/charanya78/melanoma-detection/blob/main/4.%20CNN%20Feature%20Selection.ipynb
+-  Dataset generated - https://github.com/charanya78/melanoma-detection/blob/main/cnn.xlsx
 
 #### ABCD FEATURE EXTRACTION
 
@@ -120,10 +122,17 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
 - Code - https://github.com/charanya78/melanoma-detection/blob/main/7.%20ABCD%20Extraction%20-%20Part%202.ipynb
 - Generated intermediate outputs - https://github.com/charanya78/melanoma-detection/blob/main/threshold.jpg
 - Final output - https://github.com/charanya78/melanoma-detection/blob/main/Result.jpg
+- Dataset generated - https://github.com/charanya78/melanoma-detection/blob/main/cnn_abcd.xlsx
 
 #### FEATURE FUSION AND FINAL CLASSIFICATION 
 
-
+- These parameters are taken for each sample in the new dataset and they are stored separately. 
+- The features extracted from the CNN and the asymmetry, border, color, and diameter parameters are fused and fed into different machine learning algorithms. 
+- This project employs seven different machine learning classifiers for the final classification. 
+- Three different classes of classifiers are used: Deep learning classifiers, Ensemble learning classifiers and traditional machine learning classifiers. 
+- The deep learning classifier used is a Multi-layer perceptron. 
+- The ensemble learning classifiers used are Gradient boosting classifier, XG Boost classifier and Bagging classifier. 
+- The machine learning classifiers used are decision trees, support vector machines and logistic regression.
 
 ## EXECUTION 
 
