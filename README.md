@@ -48,7 +48,11 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
 
 #### BASELINE CNN
 
-
+- In the first tier of classification, the Baseline CNN classifies the data samples and extracts the challenging samples. 
+- The probability difference of a lesion being benign and malignant is computed as class probability variance score and the threshold of this score is calculated. 
+- For every sample, CPVS score is calculated and if it is lesser that the threshold, these samples are classified as challenging and are sent to a baseline segregated dataset (BSD).
+- There are four convolution blocks in the CNN architecture where each block consists of different combinations of Convolutional layer, batch normalization layer, Max pooling layer and dropout layer. 
+- After these blocks, there are flattened, Dense, and Dropout layers. 
 
 #### VARIANCE SCORE AND CREATION OF NEW DATASET
 
