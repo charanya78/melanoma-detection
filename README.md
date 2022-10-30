@@ -104,12 +104,22 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
 -  There are 5 Dense layers in this model, out of which the Dense layer with 64 units is picked for feature selection. 
 -  This dense layer is one layer before the final activation layer. 
 -  These features are taken for both the training images and testing images are stored separately.
+-  Code - https://github.com/charanya78/melanoma-detection/blob/main/4.%20CNN%20Feature%20Selection.ipynb
 
 #### ABCD FEATURE EXTRACTION
 
+- One of the methods used by medical professionals to identify if the mole is malignant or benign is the ABCD rule.  
+- A is for Asymmetry: Both sides of the birthmark do not match. 
+- B is for Border: The edges are irregular, ragged, notched, or blurred. 
+- C is for Color: The color is not uniform and can be various shades of brown or black and can even have pink, red white or blue in it. 
+- D is for Diameter: The diameter of the mole is greater than 6mm. 
 
 ![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/abcd.PNG)
 
+- Code - https://github.com/charanya78/melanoma-detection/blob/main/6.%20ABCD%20Extraction%20-%20Part%201.ipynb 
+- Code - https://github.com/charanya78/melanoma-detection/blob/main/7.%20ABCD%20Extraction%20-%20Part%202.ipynb
+- Generated intermediate outputs - https://github.com/charanya78/melanoma-detection/blob/main/threshold.jpg
+- Final output - https://github.com/charanya78/melanoma-detection/blob/main/Result.jpg
 
 #### FEATURE FUSION AND FINAL CLASSIFICATION 
 
