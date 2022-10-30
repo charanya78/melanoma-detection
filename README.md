@@ -49,6 +49,11 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
 
 #### DATASET
 
+- This project is evaluated on an open-source benchmark dataset, the ISIC-2018 dataset. 
+- This dataset is taken from the International Symposium of Biomedical Imaging Collaboration (ISBI).
+- The dataset consists of 1800 benign and 1500 malignant samples, a total of 3300 samples.
+- Dataset Link : https://github.com/charanya78/melanoma-detection/tree/main/Dataset_Final
+
 #### BASELINE CNN
 
 - In the first tier of classification, the Baseline CNN classifies the data samples and extracts the challenging samples. 
@@ -80,6 +85,7 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
 - The original image with hair is passed along with the masked image where the hair is highlighted (output of thresholding).
 - The masked regions are removed from the original image and it results in an image with the hair removed.
 - Code - https://github.com/charanya78/melanoma-detection/blob/main/2.%20Hair%20removal.ipynb
+- Generated intermediate outputs and final output - https://github.com/charanya78/melanoma-detection/tree/main/hair_removal
 
 ![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/hair.PNG)
 
@@ -93,8 +99,14 @@ The major parts in the project are First-Tire CNN, Challenging dataset creation,
  
 #### CNN FEATURE EXTRACTION
 
+-  The challenging dataset is now passed to a second-tier CNN. 
+-  By default, the features of a CNN are extracted from the Dense layers. 
+-  There are 5 Dense layers in this model, out of which the Dense layer with 64 units is picked for feature selection. 
+-  This dense layer is one layer before the final activation layer. 
+-  These features are taken for both the training images and testing images are stored separately.
 
 #### ABCD FEATURE EXTRACTION
+
 
 ![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/abcd.PNG)
 
