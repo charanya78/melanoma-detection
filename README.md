@@ -42,9 +42,12 @@ To install the above mentioned dependencies use:
 
 ## ARCHITECTURE DIAGRAM
 
+The major parts in the project are First-Tire CNN, Challenging dataset creation, Second-Tier CNN feature extraction, Extraction of asymmetry, border, color and diameter (ABCD) Feature and Classification with 2-HDCNN features.
+
 ![alt text](https://github.com/charanya78/melanoma-detection/blob/main/diagrams/ARCH_DIAG.PNG)
 
 #### BASELINE CNN
+
 
 
 #### VARIANCE SCORE AND CREATION OF NEW DATASET
